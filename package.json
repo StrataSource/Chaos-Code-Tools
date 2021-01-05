@@ -1,0 +1,25 @@
+{
+    "name": "chaostools",
+    "displayName": "ChaosTools",
+    "description": "Tools for working with Chaos Source",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vpc",
+            "aliases": ["Valve Project Creator", "vpc"],
+            "extensions": [".vpc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vpc",
+            "scopeName": "source.vpc",
+            "path": "./syntaxes/vpc.tmLanguage.json"
+        }]
+    }
+}

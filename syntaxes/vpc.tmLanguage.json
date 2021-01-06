@@ -7,14 +7,34 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#other_functions"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#macros"
+		},
+		{
+			"include": "#blocks"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.vpc",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "(\\$[Dd]isable[Ll]inker[Dd]ead[Cc]ode[Ee]limination|\\$[Uu]ndefine[Pp]reprocessor[Dd]efinitions|\\$[Aa]dditional[Pp]roject[Dd]ependencies|\\$[Ii]mage[Hh]as[Ss]afe[Ee]xception[Hh]andlers|\\$[Aa]dditional[Ii]nclude[Dd]irectories|\\$[Aa]dditional[Ll]ibrary[Dd]irectories|\\$[Ee]nable[Ee]nhanced[Ii]nstruction[Ss]et|\\$[Aa]dditional[Dd]ependencies_[Pp]roj|\\$[Cc]reate/[Uu]se[Pp]recompiled[Hh]eader|\\$[Gg][Cc][Cc]_[Ee]xtra[Cc]xx[Cc]ompiler[Ff]lags|\\$[Oo]rder[Oo]nly[Ff]ile[Dd]ependencies|\\$[Cc]reate/[Uu]se[Pp][Cc][Hh][Tt]hrough[Ff]ile|\\$[Dd]isable[Ss]pecific[Ww]arnings|\\$[Pp]reprocessor[Dd]efinitions|\\$[Aa]dditional[Dd]ependencies|\\$[Gg][Cc][Cc]_[Ee]xtra[Cc]ompiler[Ff]lags|\\$[Aa]dditional[Oo]utput[Ff]iles|\\$[Ii]ntermediate[Dd]irectory|\\$[Pp]recompiled[Hh]eader[Ff]ile|\\$[Tt]reat[Ww]arnings[Aa]s[Ee]rrors|\\$[Gg][Cc][Cc]_[Ee]xtra[Ll]inker[Ff]lags|\\$[Ii]gnore[Ii]mport[Ll]ibrary|\\$[Aa]dditional[Oo]ptions|\\$[Cc]onfiguration[Tt]ype|\\$[Ee]xcluded[Ff]rom[Bb]uild|\\$[Pp]otential[Oo]utputs|\\$[Ss]ymbol[Vv]isibility|\\$[Ss]ymbol[Vv]isibility|\\$[Ss]ystem[Ff]rameworks|\\$[Ll]ocal[Ff]rameworks|\\$[Oo]utput[Dd]irectory|\\$[Ss]ystem[Ll]ibraries|\\$[Bb]uild[Mm]ulti[Aa]rch|\\$[Gg]ame[Oo]utput[Ff]ile|\\$[Ii]mp[Ll]ib[Ee]xternal|\\$[Ii]mplib[Ee]xternal|\\$[Oo]ptimizer[Ll]evel|\\$[Pp]ost[Bb]uild[Ee]vent|\\$[Ff]orce[Ii]ncludes|\\$[Ii]mport[Ll]ibrary|\\$[Mm]acro[Rr]equired|\\$[Pp][Oo][Ss][Ii][Xx]_[Rr][Pp]aths|\\$[Ss]how[Ii]ncludes|\\$[Cc]ommand[Ll]ine|\\$[Cc]onditional|\\$[Dd]escription|\\$[Dd]ynamic[Ff]ile|\\$[Ll]ib[Ee]xternal|\\$[Oo]utput[Ff]ile|\\$[Ii]nclude|\\$[Oo]utputs|\\$[Ii]mp[Ll]ib|\\$[Ii]mp[Ll]ib|\\$[Mm]acro|\\$[Ff]ile|\\$[Ll]ib|\\$[Dd]isable[Ll]inker[Dd]ead[Cc]ode[Ee]limination)"
 			}]
+		},
+		"blocks": {
+			"patterns": [
+				{
+					"name": "support.class",
+					"match": "(\\$[Pp]roject|\\$[Cc]onfiguration|\\$[Cc]ompiler|\\$[Ll]inker|\\$[Pp]re[Ll]ink[Ee]vent|\\$[Pp]re[Bb]uild[Ee]vent|\\$[Gg]roup|\\$[Gg]eneral|\\$[Ff]older|\\$[Cc]ustom[Bb]uild[Ss]tep)"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.vpc",
@@ -22,8 +42,44 @@
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.vpc",
-					"match": "\\\\."
+					"name": "variable",
+					"match": "\\$(SRCDIR|OUTBINNAME|\\((TargetName|IntDir|IntermediateOutputPath|InputName|InputFileName|ConfigurationName|InputPath|InputDir)\\)|AUTO_SCRIPT_FILENAME|AUTO_SCRIPT_BASENAME|VTUNE_DIR|LIBPUBLIC|BASE|OUTBINDIR|OUTLIBDIR|PSLIB_TPY|USE_BLOBULATOR|PANORAMA_ENABLE|CHAOS_TRUNK_BUILD|OUTLIBDIR|OUTLIBCOMMONDIR|IS_LIB_PROJECT|QT_ROOT|QT_MOC_TOOL|QT_UI_TOOL|QT_QRC_TOOL|HOST_WINDOWS|HOST_OSXALL|HOST_LINUXALL|HOST_OSX32|HOST_OSX64|HOST_LINUX32|HOST_LINUX64|HOST_LINUXSTEAMRTARM32HF|HOST_LINUXSTEAMRTARM64HF|HOST_LINUXSERVER64|HOST_LINUXSTEAMRT64|POSIX|IOS|OSXALL|LINUX|LINUXARM|ARCH_ARM|DEDICATED|_POSIX|WIN32|WIN64|_DLL_EXT|_IMPLIB_EXT|_DLL_PREFIX|_IMPLIB_PREFIX|_IMPLIB_DLL_PREFIX|_STATICLIB_EXT|_EXE_EXT|_SYM_EXT|_EXTERNAL_DLL_EXT|PLATSUBDIR|_EXTERNAL_IMPLIB_EXT|_EXTERNAL_STATICLIB_EXT)"
+				}
+			]
+		},
+		"other_functions": {
+			"name": "entity.name.function.vpc",
+			"patterns": [
+				{
+					"name": "entity.name.function.vpc",
+					"match": "\\[[|&_!-a-zA-Z0-9 \\$]*\\]"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash.vpc",
+			"begin": "//",
+			"end": "^"
+		},
+		"block_comment": {
+			"name": "comment.block.vpc",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		"macros": {
+			"name": "variable.vpc",
+			"patterns": [
+				{
+					"name": "variable.vpc.macro",
+					"match": "(?<=\\$Macro\\s)[A-z0-9_]+"
+				},
+				{
+					"name": "variable.vpc.macrorequired",
+					"match": "(?<=\\$MacroRequired\\s)[A-z0-9_]+"
+				},
+				{
+					"name": "variable.vpc.conditional",
+					"match": "(?<=\\$Conditional\\s)[A-z0-9_]+"
 				}
 			]
 		}

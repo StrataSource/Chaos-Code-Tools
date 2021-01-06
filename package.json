@@ -10,16 +10,42 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "vpc",
-            "aliases": ["Valve Project Creator", "vpc"],
-            "extensions": [".vpc"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "vpc",
-            "scopeName": "source.vpc",
-            "path": "./syntaxes/vpc.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "vpc",
+                "aliases": [
+                    "Valve Project Creator",
+                    "vpc"
+                ],
+                "extensions": [
+                    ".vpc"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "kv",
+                "aliases": [
+                    "Key Values",
+                    "keyvalues",
+                    "kv"
+                ],
+                "extensions": [
+                    ".kv"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vpc",
+                "scopeName": "source.vpc",
+                "path": "./syntaxes/vpc.tmLanguage.json"
+            },
+            {
+                "language": "kv",
+                "scopeName": "source.kv",
+                "path": "./syntaxes/kv.tmLanguage.json"
+            }
+        ]
     }
 }

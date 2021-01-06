@@ -1,0 +1,48 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Key Values",
+	"patterns": [
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+        },
+        {
+            "include": "#block_comment"
+        },
+        {
+            "include": "#conditionals"
+        }
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.kv",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+
+			]
+		},
+		"conditionals": {
+			"name": "entity.name.function.kv",
+			"patterns": [
+				{
+					"name": "entity.name.function.kv",
+					"match": "\\[[|&_!-a-zA-Z0-9 \\$]*\\]"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash.kv",
+			"begin": "//",
+			"end": "^"
+		},
+		"block_comment": {
+			"name": "comment.block.kv",
+			"begin": "/\\*",
+			"end": "\\*/"
+		}
+	},
+	"scopeName": "source.kv"
+}

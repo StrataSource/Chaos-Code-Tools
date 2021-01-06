@@ -18,7 +18,8 @@
                     "vpc"
                 ],
                 "extensions": [
-                    ".vpc"
+                    ".vpc",
+                    ".vgc"
                 ],
                 "configuration": "./language-configuration.json"
             },

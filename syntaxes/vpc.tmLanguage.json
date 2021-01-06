@@ -9,7 +9,10 @@
 			"include": "#strings"
 		},
 		{
-			"include": "#other_functions"
+			"include": "#conditionals"
+		},
+		{
+			"include": "#block_comment"
 		},
 		{
 			"include": "#comments"
@@ -47,7 +50,7 @@
 				}
 			]
 		},
-		"other_functions": {
+		"conditionals": {
 			"name": "entity.name.function.vpc",
 			"patterns": [
 				{

@@ -3,6 +3,11 @@
     "displayName": "ChaosTools",
     "description": "Tools for working with Chaos Source",
     "version": "0.0.1",
+    "publisher": "chaos-initiative",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ChaosInitiative/chaos-vscode.git"
+    },
     "engines": {
         "vscode": "^1.52.0"
     },

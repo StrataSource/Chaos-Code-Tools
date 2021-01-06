@@ -1,0 +1,89 @@
+# Vim Syntax file for VPC (Valve Project Creator) files
+# Author: JJL7
+# Common keys
+
+$ImpLib
+$ImportLibrary
+$AdditionalDependencies
+$POSIX_RPaths
+$SymbolVisibility
+$AdditionalOutputFiles
+$OrderOnlyFileDependencies
+$OutputFile
+$PreprocessorDefinitions
+$AdditionalDependencies_Proj
+$AdditionalIncludeDirectories
+$UndefinePreprocessorDefinitions
+$Create/UsePrecompiledHeader
+$Create/UsePCHThroughFile
+$PrecompiledHeaderFile
+$ForceIncludes
+$ExcludedFromBuild
+$CommandLine
+$ConfigurationType
+$Description
+$GCC_ExtraCompilerFlags
+$GCC_ExtraCxxCompilerFlags
+$GCC_ExtraLinkerFlags
+$GameOutputFile
+$LocalFrameworks
+$OptimizerLevel
+$Outputs
+$PotentialOutputs
+$PostBuildEvent
+$SymbolVisibility
+$SystemFrameworks
+$SystemLibraries
+$BuildMultiArch
+$TreatWarningsAsErrors
+$DisableLinkerDeadCodeElimination
+$Lib
+$File
+$ImpLibExternal
+$ImpLib
+$ImplibExternal
+$OutputDirectory
+$IntermediateDirectory
+$IgnoreImportLibrary
+$LibExternal
+$EnableEnhancedInstructionSet
+$AdditionalLibraryDirectories
+$AdditionalOptions
+$DynamicFile
+$AdditionalProjectDependencies
+$ShowIncludes
+$DisableSpecificWarnings
+$ImageHasSafeExceptionHandlers
+
+
+# Project keywords
+#$Linker
+#$Configuration
+#$Compiler
+#$Project
+#$Group
+#$General
+#$Folder
+#$PreLinkEvent
+#$CustomBuildStep
+
+# syn match vpcConditional "\[[|&_!-a-zA-Z0-9 \$]*\]"
+
+$Include
+$Macro
+$MacroRequired
+$Conditional
+
+#syn region vpcString    start=+"+ end=+"+
+
+#syn match vpcComment    "//.*" 
+
+#hi def link vpcString String
+#hi def link vpcComment Comment
+#hi def link vpcCommand Statement 
+#hi def link vpcDirective Include 
+#hi def link vpcConditional Structure
+#
+#
+#let b:current_syntax = "vpc"
+#

@@ -2,7 +2,7 @@
     "name": "chaostools",
     "displayName": "ChaosTools",
     "description": "Tools for working with Chaos Source",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "chaos-initiative",
     "repository": {
         "type": "git",

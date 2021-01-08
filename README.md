@@ -8,3 +8,6 @@ This is a vscode extension to simplify your workflow when working with Chaos Sou
 
 ## TODO
 1. Snippets for vpc projects 
+2. QC support
+3. FGD support
+4. Remote console integration???

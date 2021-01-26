@@ -11,3 +11,11 @@ This is a vscode extension to simplify your workflow when working with Chaos Sou
 2. QC support
 3. FGD support
 4. Remote console integration???
+
+## Packaging Extension
+
+Install vsce using npm.
+
+```sh
+vsce package
+```

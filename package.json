@@ -2,7 +2,7 @@
     "name": "chaostools",
     "displayName": "ChaosTools",
     "description": "Tools for working with Chaos Source",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "chaos-initiative",
     "repository": {
         "type": "git",
@@ -61,5 +61,12 @@
                 "path": "./themes/chaos-vs-dark.json"
             }
         ]
+    },
+    "devDependencies": {
+        "webpack": "^5.17.0",
+        "webpack-cli": "^4.4.0"
+    },
+    "dependencies": {
+        "vsce": "^1.84.0"
     }
 }

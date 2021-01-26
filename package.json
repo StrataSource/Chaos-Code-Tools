@@ -52,6 +52,14 @@
                 "scopeName": "source.kv",
                 "path": "./syntaxes/kv.tmLanguage.json"
             }
+        ],
+        "themes": [
+            {
+                "id": "Chaos Visual Studio Dark++",
+                "label": "Chaos Visual Studio Dark++",
+                "uiTheme": "vs-dark",
+                "path": "./themes/chaos-vs-dark.json"
+            }
         ]
     }
 }

@@ -466,6 +466,25 @@
 			"settings": {
 				"foreground": "#999999"
 			}
+		},
+		{
+			"scope": "variable.vpc",
+			"settings": {
+				"foreground": "#E627D6"
+			}
+		},
+		{
+			"scope": "support.class.vpc",
+			"settings": {
+				"foreground": "#569CD6"
+			}
+		},
+		{
+			"scope": "entity.name.function.vpc",
+			"settings": {
+				"foreground": "#55FFAA",
+				"fontStyle": "bold"
+			}
 		}
     ],
     "semanticTokenColors":{
@@ -485,6 +504,6 @@
         "macro": {
             "foreground": "#E627D6",
             "fontStyle": "bold"
-        }
-    }
+		}
+	}
 }

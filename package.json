@@ -1,9 +1,9 @@
 {
-    "name": "chaostools",
-    "displayName": "ChaosTools",
-    "description": "Tools for working with Chaos Source",
+    "name": "source-tools",
+    "displayName": "Source Engine Tools",
+    "description": "Tools for working with the Source Engine",
     "version": "0.0.3",
-    "publisher": "chaos-initiative",
+    "publisher": "chaosinitiative",
     "repository": {
         "type": "git",
         "url": "https://github.com/ChaosInitiative/chaos-vscode.git"

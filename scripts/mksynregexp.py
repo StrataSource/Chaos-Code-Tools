@@ -17,6 +17,7 @@ outlines = []
 for line in lines:
     if len(line) <= 0 or line.isspace():
         continue
+    line = line.rstrip()
     if line.startswith('#'):
         continue
     l = ""
@@ -32,9 +33,10 @@ for line in lines:
         l+=c 
     outlines.append(l)
 
-print('(', end='')
+#print('(', end='')
+#for l in outlines:
+#    print(l, end='|')
+#print(outlines[0] + ')')
+
 for l in outlines:
-    print(l, end='|')
-print(outlines[0] + ')')
-
-
+    print(f'{{\n"name":"keyword.control.vpc",\n"match": "{l}"\n}},')

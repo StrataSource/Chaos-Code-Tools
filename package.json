@@ -2,7 +2,7 @@
     "name": "source-tools",
     "displayName": "Source Engine Tools",
     "description": "Tools for working with the Source Engine",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "chaosinitiative",
     "repository": {
         "type": "git",

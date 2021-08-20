@@ -1,6 +1,6 @@
 # Chaos Tools VSCode Extension
 
-This is a vscode extension to simplify your workflow when working with Chaos Source. Currently WIP.
+This is a vscode extension to simplify your workflow when working with Source Engine projects.
 
 ## Features
 * VPC (Valve Project Creator) syntax highlighting
@@ -10,12 +10,4 @@ This is a vscode extension to simplify your workflow when working with Chaos Sou
 1. Snippets for vpc projects 
 2. QC support
 3. FGD support
-4. Remote console integration???
-
-## Packaging Extension
-
-Install vsce using npm.
-
-```sh
-vsce package
-```
+4. Sound script support
